@@ -9,3 +9,4 @@ api/prebuilds
 electron/resources/api
 electron/resources/prebuilds
 electron-builder.env
+ui/meshsense-beta-arm64.AppImage
