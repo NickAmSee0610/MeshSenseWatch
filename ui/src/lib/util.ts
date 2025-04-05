@@ -49,6 +49,7 @@ export function timeAgo(seconds) {
   return `now`
 }
 
+
 export function isScrollAtEnd(element: HTMLElement) {
   return element.scrollTop + element.clientHeight >= element.scrollHeight - 1
 }

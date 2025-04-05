@@ -9,6 +9,7 @@
 </script>
 
 <script>
+  import { getNodeName } from './lib/util'
   import {
     accessKey,
     apiHostname,
@@ -23,14 +24,21 @@
     nodeInactiveTimer,
     myNodeMetadata,
     myNodeNum,
-    meshMapForwarding
+    meshMapForwarding,
+    warnChannel,
+    channels,
+    warnInterval,
+    warnResumeMessage,
+    warnWarningTime,
+    warnOfflineTime
+
   } from 'api/src/vars'
   import { hasAccess, userKey, blockUserKey, getNodeById } from './lib/util'
   import { State } from 'api/src/lib/state'
   import { tick } from 'svelte'
   import axios from 'axios'
   import { writable } from 'svelte/store'
-
+  import { filteredNodes, smallMode } from './Nodes.svelte'
   let clientKeyInput = $userKey
 
   function applyClientKey() {
@@ -143,7 +151,45 @@
       <div class="font-bold">MeshSense Beta Updates</div>
       <button class="btn !mr-auto" on:click={() => axios.get('/checkUpdate')}>Check for updates</button>
     </label>
+    {#if $hasAccess}
+    <hr class="opacity-25" />
+    <label>
+      <div class="font-bold">Warning channel</div>
+      <select bind:value={$warnChannel} class="input font-normal text-sm border border-blue-500/50 !bg-blue-950" name="" id="">
+        <option value=-1>No warnings</option>  
+        <option disabled>== Channels ==</option>
+        {#each $channels as channel}
+          {#if channel.role != 'DISABLED'}
+            <option value={channel.index}>{channel.settings.name || `Channel ${channel.index}`}</option>
+          {/if}
+        {/each}
 
+        <option disabled>== Nodes ==</option>
+        {#each [...$filteredNodes].sort((a, b) => {
+          return getNodeName(a).localeCompare(getNodeName(b))
+        }) as node}
+          <option value={node.num}>{getNodeName(node)}</option>
+        {/each}
+      </select>
+
+  </label>
+  <label>
+    <div class="font-bold">Warn message interval</div>
+    <input class="input w-28" type="number" bind:value={$warnInterval} />
+  </label>
+  <label>
+    <input type="checkbox" bind:checked={$warnResumeMessage} />
+    <div class="font-bold">Notify if offline node resumes</div>
+  </label>
+  <label>
+    <div class="font-bold">Warn after minutes not active</div>
+    <input class="input w-28" type="number" bind:value={$warnWarningTime} />
+  </label>
+  <label>
+    <div class="font-bold">Minutes after that a node is defined as offline</div>
+    <input class="input w-28" type="number" bind:value={$warnOfflineTime} />
+  </label>
+  {/if}
     <hr class="opacity-25" />
 
     <label class="flex gap-2">

@@ -25,10 +25,23 @@ export let automaticTraceroutes = new State<boolean>('automaticTraceroutes', tru
 export let meshSenseNewsDate = new State<number>('meshSenseNewsDate', 0, { persist: true })
 export let pendingTraceroutes = new State<number[]>('pendingTraceroutes', [], { hideLog: true })
 export let meshMapForwarding = new State<boolean>('meshMapForwarding', false, { hideLog: true, persist: true })
+export let warnChannel = new State<string>('warnChannel',undefined,{persist:true})
+export let warnInterval = new State<number>('warInterval',15,{persist:true})
+export let warnResumeMessage = new State<boolean>('warnResume',false,{persist:true})
+export let warnWarningTime = new State<number>('warnWarningTime',15,{persist:true})
+export let warnOfflineTime = new State<number>('warnOfflineTime',30,{persist:true})
 
+export let warnNodes = new State<WarnNode[]>('warnNodes',[],{primaryKey:'nodeNum',persist:true})
 /** Measured in minutes */
 export let tracerouteRateLimit = new State<number>('tracerouteRateLimit', 60, { persist: true })
 export let nodeInactiveTimer = new State<number>('nodeInactiveTimer', 60, { persist: true })
+
+export type WarnNode = {
+  nodeNum:number
+  nodeName:String
+  lastWarningSent:number
+  wasOffline:boolean
+}
 
 export type DeviceMetadata = {
   firmwareVersion: string
