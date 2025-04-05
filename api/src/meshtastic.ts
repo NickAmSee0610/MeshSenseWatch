@@ -26,7 +26,8 @@ import {
   packets,
   pendingTraceroutes,
   tracerouteRateLimit,
-  version
+  version,
+  warnNodes
 } from './vars'
 import { beginScanning, bluetoothDevices, stopScanning } from './lib/bluetooth'
 import exitHook from 'exit-hook'
@@ -470,7 +471,10 @@ export async function connect(address?: string) {
 }
 
 export async function send({ message = '', destination, channel, wantAck = false }) {
-  if (connectionStatus.value != 'connected' || !message) return
+  if (connectionStatus.value != 'connected' || !message) {
+    console.log("Error in sending")
+    return
+  }
   message = `${messagePrefix.value || ''} ${message} ${messageSuffix.value || ''}`.trim()
   console.log('Sending', { message, destination, channel, wantAck })
   return connection.sendText(message, destination, wantAck, channel)
@@ -637,6 +641,25 @@ export async function setPosition(position: Position) {
 export async function setTime(seconds?: number) {
   // console.log('[meshtastic]', 'Updating Device Time')
   // return connection.setPosition(new Protobuf.Mesh.Position({ time: seconds }))
+}
+
+export async function toggleWatch(pNodeNum:number){
+  console.log('Toggle watch',pNodeNum)
+  console.log(typeof(warnNodes.value))
+  const found=warnNodes.value.find((warnNode) => pNodeNum==warnNode.nodeNum);
+  const node=nodes.value.find((fNode)=>pNodeNum==fNode.num)
+  if(found){
+    console.log("remove")
+    //warnNodes.delete(pNodeNum)
+    //warnNodes.delete({pNodeNum},'nodeNum')
+    const newArray = warnNodes.value.filter((item, index) => item.nodeNum !== pNodeNum);
+    console.log(JSON.stringify(newArray))
+    warnNodes.set(newArray)
+    
+  }else{
+    console.log("add")
+    warnNodes.push({nodeNum:pNodeNum,nodeName:node.user.longName,lastWarningSent:0})
+  }
 }
 
 export async function setChannel(channel: Channel) {

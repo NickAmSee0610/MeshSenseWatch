@@ -5,7 +5,7 @@
 </script>
 
 <script lang="ts">
-  import { currentTime, myNodeMetadata, myNodeNum, nodeInactiveTimer, nodes, pendingTraceroutes, type NodeInfo } from 'api/src/vars'
+  import { currentTime, myNodeMetadata, myNodeNum, nodeInactiveTimer, nodes, pendingTraceroutes, type NodeInfo,warnNodes,warnWarningTime,warnOfflineTime } from 'api/src/vars'
   import Card from './lib/Card.svelte'
   import { getCoordinates, getNodeName, getNodeNameById, hasAccess, unixSecondsTimeAgo } from './lib/util'
   import Microchip from './lib/icons/Microchip.svelte'
@@ -34,13 +34,57 @@
         if (a.hopsAway == 0 && b.hopsAway == 0) return b.snr - a.snr
         return a.hopsAway === b.hopsAway ? getNodeName(a)?.localeCompare(getNodeName(b)) : a.hopsAway - b.hopsAway
       })
+    
+  }
+  function toggleWarnButton(nodeNum:number){
+    if(isWarnNode(nodeNum)){
+      document.getElementById("warnButton"+nodeNum).classList.remove("border")
+
+    }else{
+      document.getElementById("warnButton"+nodeNum).classList.add("border")
+
+    }
+
+
+    axios.post('/toggleWatch',{nodeNum:nodeNum})
+  }
+
+  function colorizeWarnButton(node:NodeInfo){
+    if(isWarnNode(node.num)){
+      if(Date.now()/1000-node.lastHeard<60*warnWarningTime.value){
+        return 'fillOnline'
+      }else
+      if(Date.now()/1000-node.lastHeard<60*warnOfflineTime.value){
+        return 'fillWarn'
+      }else
+      return 'fillOffline'
+    }else{
+      return 'fill-cyan-400/80';
+    }
+
+  }
+
+  function isWarnNode(nodeNum:number){
+    return $warnNodes.map(function(e) { return e.nodeNum; }).indexOf(nodeNum)>-1;
   }
 
   function clearNodes() {
     axios.post('/deleteNodes', { nodes: $inactiveNodes })
   }
 </script>
-
+<style>
+  .fillOnline{
+    background-color:green
+  }
+  .fillWarn{
+    background-color:orange
+  }
+  .fillOffline{
+    background-color:red
+  }
+  
+  
+</style>
 <Modal title="Node Detail" visible={selectedNode != undefined}>
   <div class="flex items-center gap-2 flex-wrap">
     <div class="flex items-center bg-black/20 rounded gap-2 grow">
@@ -224,7 +268,8 @@
                 on:click={() => axios.post('/traceRoute', { destination: node.num })}>↯</button
               >
             {:else if $hasAccess}
-              <button title="Set Position" class="rounded-md fill-cyan-400/80 text-lg -mx-0.5" on:click={() => ($setPositionMode = true)}
+              
+              <button title="Set Position" class="rounded-md fill-cyan-400/80 text-lg -mx-0.5 filledGreen" on:click={() => ($setPositionMode = true)}
                 ><svg width="24px" height="24px" viewBox="0 0 512 512" data-name="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   ><path
                     d="M321.85,250.69c-4-33.61-30.39-61-65.85-61-36,0-66.34,30.31-66.34,66.34S220,322.34,256,322.34c35.47,0,61.84-27.41,65.85-61a18.39,18.39,0,0,0,.49-5.32A18.71,18.71,0,0,0,321.85,250.69ZM225.12,256c0-39.95,59.88-39.6,61.76,0C285,295.55,225.12,296,225.12,256Z"
@@ -234,6 +279,22 @@
                 ></button
               >
             {/if}
+    {#if $hasAccess}
+	   <button id="warnButton{node.num}" title={isWarnNode(node.num)?"Unwatch this node":"Watch this node"} class="rounded-md text-lg {isWarnNode(node.num)?'border':''}" on:click={(evt)=>{
+    toggleWarnButton(node.num)}}>
+    <div class="{colorizeWarnButton(node)}">&#128276;</div>
+              </button>
+    {:else}
+    {#if isWarnNode(node.num)}
+    <button id="warnButton{node.num}" title="Watch this node" class="rounded-md} text-lg">
+    <div class="{colorizeWarnButton(node)}">
+        &#128276;</div>
+    </button>
+      {/if}
+    {/if}  
+
+      
+      
 
             <!-- {#if node.user?.hwModel}
               <button class="h-7 w-5 fill-blue-500" title={node.user?.hwModel}><Microchip /></button>
