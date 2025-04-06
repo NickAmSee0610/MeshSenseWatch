@@ -30,6 +30,9 @@ export let warnInterval = new State<number>('warInterval',15,{persist:true})
 export let warnResumeMessage = new State<boolean>('warnResume',false,{persist:true})
 export let warnWarningTime = new State<number>('warnWarningTime',15,{persist:true})
 export let warnOfflineTime = new State<number>('warnOfflineTime',30,{persist:true})
+export let powerWarnings = new State<boolean>('powerWarnings',false,{persist:true})
+export let powerThresholdWarning = new State<number>('powerThresholdWarning',20,{persist:true})
+export let powerThresholdError = new State<number>('powerThresholdError',10,{persist:true})
 
 export let warnNodes = new State<WarnNode[]>('warnNodes',[],{primaryKey:'nodeNum',persist:true})
 /** Measured in minutes */
@@ -41,6 +44,7 @@ export type WarnNode = {
   nodeName:String
   lastWarningSent:number
   wasOffline:boolean
+  powerAlertSent:number
 }
 
 export type DeviceMetadata = {

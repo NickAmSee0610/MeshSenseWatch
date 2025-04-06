@@ -30,7 +30,10 @@
     warnInterval,
     warnResumeMessage,
     warnWarningTime,
-    warnOfflineTime
+    warnOfflineTime,
+    powerWarnings,
+    powerThresholdError,
+    powerThresholdWarning
 
   } from 'api/src/vars'
   import { hasAccess, userKey, blockUserKey, getNodeById } from './lib/util'
@@ -188,6 +191,18 @@
   <label>
     <div class="font-bold">Minutes after that a node is defined as offline</div>
     <input class="input w-28" type="number" bind:value={$warnOfflineTime} />
+  </label>
+  <label>
+    <input type="checkbox" bind:checked={$powerWarnings} />
+    <div class="font-bold">Send power alerts</div>
+  </label>
+  <label>
+    <div class="font-bold">Power warn level</div>
+    <input class="input w-28" type="number" bind:value={$powerThresholdWarning} />
+  </label>
+  <label>
+    <div class="font-bold">Power error level</div>
+    <input class="input w-28" type="number" bind:value={$powerThresholdError} />
   </label>
   {/if}
     <hr class="opacity-25" />

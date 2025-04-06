@@ -3,7 +3,9 @@ import './lib/persistence'
 import { app, createRoutes, finalize, server } from './lib/server'
 import './meshtastic'
 import { connect, disconnect, deleteNodes, requestPosition, send, traceRoute, setPosition, deviceConfig,toggleWatch } from './meshtastic'
-import { connectionStatus,address, apiPort, currentTime, apiHostname, accessKey, autoConnectOnStartup, meshSenseNewsDate,warnChannel,warnNodes, nodes,warnInterval,warnOfflineTime,warnResumeMessage, warnWarningTime } from './vars'
+import { connectionStatus,address, apiPort, currentTime, apiHostname, accessKey, autoConnectOnStartup, meshSenseNewsDate,warnChannel,warnNodes, 
+  nodes,warnInterval,warnOfflineTime,warnResumeMessage, warnWarningTime,
+  powerWarnings,powerThresholdError,powerThresholdWarning } from './vars'
 import { hostname } from 'os'
 import intercept from 'intercept-stdout'
 import { createWriteStream } from 'fs'
@@ -11,23 +13,6 @@ import { dataDirectory } from './lib/paths'
 import { join } from 'path'
 import axios from 'axios'
 
-function timeAgo(seconds) {
-  const intervals = [
-    { value: 31536000, unit: 'y' },
-    { value: 86400, unit: 'd' },
-    { value: 3600, unit: 'h' },
-    { value: 60, unit: 'm' }
-  ]
-
-  for (const interval of intervals) {
-    const quotient = Math.floor(seconds / interval.value)
-    if (quotient >= 1) {
-      return `${quotient}${interval.unit}`
-    }
-  }
-
-  return `now`
-}
 
 function checkWarnNodes(){
   if(connectionStatus.value!="connected"){
@@ -62,9 +47,31 @@ function checkWarnNodes(){
       console.log('Node reached warning time. Calling')
       requestPosition(foundNode.num)
     }else
-    if(warnNode.wasOffline && warnResumeMessage){
+    if(warnNode.wasOffline && warnResumeMessage.value){
       send({message:warnNode.nodeName+" is online again",destination:sendNode,channel:sendChannel,wantAck:false}) 
       warnNode.wasOffline=false    
+    }else
+    if(powerWarnings.value && foundNode.deviceMetrics.batteryLevel<powerThresholdError.value && warnNode.powerAlertSent<2){
+      send({message:"Power level of "+warnNode.nodeName+" below "+powerThresholdError.value +"% (Error level)",destination:sendNode,channel:sendChannel,wantAck:false})       
+      warnNode.powerAlertSent=2
+    }else
+    if(powerWarnings.value && foundNode.deviceMetrics.batteryLevel<powerThresholdWarning.value && warnNode.powerAlertSent<1){
+      send({message:"Power level of "+warnNode.nodeName+" below "+powerThresholdWarning.value +"% (Warning level)",destination:sendNode,channel:sendChannel,wantAck:false})       
+      warnNode.powerAlertSent=1
+    }else
+    if(powerWarnings.value && foundNode.deviceMetrics.batteryLevel>powerThresholdWarning.value && warnNode.powerAlertSent>=1){
+      if(warnResumeMessage.value){
+        send({message:"Power level of "+warnNode.nodeName +"resumed to normal level",destination:sendNode,channel:sendChannel,wantAck:false})       
+        
+      }
+      warnNode.powerAlertSent=0
+    }else
+    if(powerWarnings.value && foundNode.deviceMetrics.batteryLevel>powerThresholdError.value && warnNode.powerAlertSent==2){
+      if(warnResumeMessage.value){
+        send({message:"Power level of "+warnNode.nodeName +"resumed to warning level",destination:sendNode,channel:sendChannel,wantAck:false})       
+        
+      }
+      warnNode.powerAlertSent=1
     }
   }else{
 
