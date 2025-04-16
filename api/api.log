@@ -1,0 +1,2175 @@
+
+> api@1.0.0 dev
+> nodemon --signal SIGINT -x 'vite-node' src/index.ts
+
+[33m[nodemon] 3.1.9[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: ts,json[39m
+[32m[nodemon] starting `vite-node src/index.ts`[39m
+{
+  programDirectory: '/home/ssh/MeshSense/api',
+  staticDirectory: '/home/ssh/MeshSense/api/static',
+  dataDirectory: '/home/ssh/.local/share/meshsense'
+}
+Creating route cache for undefined
+[bluetooth] Begin Scanning
+[bluetooth] Adapter available: true
+[bluetooth] scanning...
+No node url set
+[news] Checking for news
+[meshtastic] Calling connect 192.168.178.112
+Disconnecting from device
+06[0m[0m:47[0m[0m:41[0m[0m:123[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	Constructor 🔷 HttpConnection instantiated
+[bluetooth] Stop Scanning
+[State] connectionStatus set connecting
+[meshtastic] Connecting to Node 192.168.178.112 via IP
+[meshtastic] Device Status 3
+Server listening { address: '::', family: 'IPv6', port: 5920 }
+[bluetooth] Device Detected | 2E:B7:CB:3A:8A:48 Unknown or Unsupported Device (2E:B7:CB:3A:8A:48)
+06[0m[0m:47[0m[0m:41[0m[0m:558[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	Connect Connection succeeded, starting configuration and request timer.
+06[0m[0m:47[0m[0m:41[0m[0m:567[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	Configure ⚙️ Requesting device configuration
+[meshtastic] Device Status 6
+[State] connectionStatus set configuring
+[meshtastic] Device Status 5
+Creating route cache for 3667343328
+[State] myNodeNum set 3667343328
+06[0m[0m:47[0m[0m:42[0m[0m:078[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node info for this device
+06[0m[0m:47[0m[0m:42[0m[0m:175[0m[0m	[33m[1mWARN[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio ⚠️ Unhandled payload variant: deviceuiConfig
+06[0m[0m:47[0m[0m:42[0m[0m:279[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 1127301168
+06[0m[0m:47[0m[0m:42[0m[0m:360[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	GetMetadata 🏷️ Received metadata packet
+[State] myNodeMetadata set {
+  '$typeName': 'meshtastic.DeviceMetadata',
+  firmwareVersion: '2.5.20.4c97351',
+  deviceStateVersion: 23,
+  canShutdown: true,
+  hasWifi: true,
+  hasBluetooth: true,
+  hasEthernet: false,
+  role: 0,
+  positionFlags: 811,
+  hwModel: 3,
+  hasRemoteHardware: false,
+  hasPKC: true,
+  '$unknown': [ { no: 12, wireType: 0, data: [Uint8Array] } ]
+}
+06[0m[0m:47[0m[0m:42[0m[0m:442[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 🔐 Received Channel: 0
+06[0m[0m:47[0m[0m:42[0m[0m:518[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 🔐 Received Channel: 1
+06[0m[0m:47[0m[0m:42[0m[0m:576[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 🔐 Received Channel: 2
+06[0m[0m:47[0m[0m:42[0m[0m:640[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 🔐 Received Channel: 3
+06[0m[0m:47[0m[0m:42[0m[0m:700[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 🔐 Received Channel: 4
+06[0m[0m:47[0m[0m:42[0m[0m:758[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 🔐 Received Channel: 5
+06[0m[0m:47[0m[0m:42[0m[0m:817[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 🔐 Received Channel: 6
+06[0m[0m:47[0m[0m:42[0m[0m:878[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 🔐 Received Channel: 7
+06[0m[0m:47[0m[0m:42[0m[0m:943[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 💾 Received Config packet of variant: device
+06[0m[0m:47[0m[0m:43[0m[0m:003[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 💾 Received Config packet of variant: position
+06[0m[0m:47[0m[0m:43[0m[0m:067[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 💾 Received Config packet of variant: power
+06[0m[0m:47[0m[0m:43[0m[0m:137[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 💾 Received Config packet of variant: network
+06[0m[0m:47[0m[0m:43[0m[0m:202[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 💾 Received Config packet of variant: display
+06[0m[0m:47[0m[0m:43[0m[0m:272[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 💾 Received Config packet of variant: lora
+06[0m[0m:47[0m[0m:43[0m[0m:342[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 💾 Received Config packet of variant: bluetooth
+06[0m[0m:47[0m[0m:43[0m[0m:410[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 💾 Received Config packet of variant: security
+06[0m[0m:47[0m[0m:43[0m[0m:479[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 💾 Received Config packet of variant: sessionkey
+06[0m[0m:47[0m[0m:43[0m[0m:530[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 💾 Received Config packet of variant: deviceUi
+06[0m[0m:47[0m[0m:43[0m[0m:648[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 💾 Received Module Config packet of variant: mqtt
+06[0m[0m:47[0m[0m:43[0m[0m:726[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 💾 Received Module Config packet of variant: serial
+06[0m[0m:47[0m[0m:43[0m[0m:790[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 💾 Received Module Config packet of variant: externalNotification
+06[0m[0m:47[0m[0m:43[0m[0m:848[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 💾 Received Module Config packet of variant: storeForward
+06[0m[0m:47[0m[0m:43[0m[0m:913[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 💾 Received Module Config packet of variant: rangeTest
+06[0m[0m:47[0m[0m:43[0m[0m:975[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 💾 Received Module Config packet of variant: telemetry
+06[0m[0m:47[0m[0m:44[0m[0m:044[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 💾 Received Module Config packet of variant: cannedMessage
+[WSS] Connection from ::ffff:192.168.178.103:33516
+(node:864754) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+06[0m[0m:47[0m[0m:44[0m[0m:121[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 💾 Received Module Config packet of variant: audio
+06[0m[0m:47[0m[0m:44[0m[0m:184[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 💾 Received Module Config packet of variant: remoteHardware
+06[0m[0m:47[0m[0m:44[0m[0m:243[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 💾 Received Module Config packet of variant: neighborInfo
+06[0m[0m:47[0m[0m:44[0m[0m:350[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 💾 Received Module Config packet of variant: ambientLighting
+06[0m[0m:47[0m[0m:44[0m[0m:412[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 💾 Received Module Config packet of variant: detectionSensor
+06[0m[0m:47[0m[0m:44[0m[0m:487[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 💾 Received Module Config packet of variant: paxcounter
+06[0m[0m:47[0m[0m:44[0m[0m:575[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 3667344600
+Loading cached route 3667344600 {
+  '$typeName': 'meshtastic.RouteDiscovery',
+  route: [ 1365044228, 2086326872 ],
+  snrTowards: [ -54, -21, -47 ],
+  routeBack: [ 2086326872, 1365044228 ],
+  snrBack: [ -58, -29, -56 ]
+}
+06[0m[0m:47[0m[0m:44[0m[0m:680[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 2086326872
+06[0m[0m:47[0m[0m:44[0m[0m:763[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 1136063148
+Loading cached route 1136063148 {
+  '$typeName': 'meshtastic.RouteDiscovery',
+  route: [ 1127301168, 2086326872, 3667344600 ],
+  snrTowards: [ 26, -72, -41, -73 ],
+  routeBack: [ 3667344600, 1365044228 ],
+  snrBack: [ -60, -55, -76 ]
+}
+06[0m[0m:47[0m[0m:44[0m[0m:853[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 2086324428
+Loading cached route 2086324428 {
+  '$typeName': 'meshtastic.RouteDiscovery',
+  route: [ 3953531109, 3667344600 ],
+  snrTowards: [ -78, -26, -62 ],
+  routeBack: [ 3667344600, 3953531109 ],
+  snrBack: [ -31, -56, -75 ]
+}
+06[0m[0m:47[0m[0m:44[0m[0m:941[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 3953531109
+Loading cached route 3953531109 {
+  '$typeName': 'meshtastic.RouteDiscovery',
+  route: [ 1365044228, 2086326872, 3667344600 ],
+  snrTowards: [ -67, 6, -52, -56 ],
+  routeBack: [ 3667344600, 2086326872, 1365044228 ],
+  snrBack: [ -35, -69, -7, -65 ]
+}
+06[0m[0m:47[0m[0m:45[0m[0m:051[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 2579269524
+Loading cached route 2579269524 {
+  '$typeName': 'meshtastic.RouteDiscovery',
+  route: [ 1365044228, 3667344600, 3953531109 ],
+  snrTowards: [ -50, -24, -56, 25 ],
+  routeBack: [ 4294967295, 1365044228 ],
+  snrBack: [ -128, -72, -43 ]
+}
+06[0m[0m:47[0m[0m:45[0m[0m:142[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 1127858072
+Loading cached route 1127858072 {
+  '$typeName': 'meshtastic.RouteDiscovery',
+  route: [],
+  snrTowards: [ -72 ],
+  routeBack: [],
+  snrBack: []
+}
+06[0m[0m:47[0m[0m:45[0m[0m:234[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 1127957296
+06[0m[0m:47[0m[0m:45[0m[0m:320[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 1129809064
+06[0m[0m:47[0m[0m:45[0m[0m:412[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 3663648824
+06[0m[0m:47[0m[0m:45[0m[0m:494[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 3558878084
+Loading cached route 3558878084 {
+  '$typeName': 'meshtastic.RouteDiscovery',
+  route: [ 1365044228 ],
+  snrTowards: [ -73, 22 ],
+  routeBack: [ 4294967295 ],
+  snrBack: [ -128, -72 ]
+}
+06[0m[0m:47[0m[0m:45[0m[0m:582[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 2651861336
+06[0m[0m:47[0m[0m:45[0m[0m:653[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 4038282431
+06[0m[0m:47[0m[0m:45[0m[0m:731[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 3666540124
+06[0m[0m:47[0m[0m:45[0m[0m:901[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 1722284360
+06[0m[0m:47[0m[0m:45[0m[0m:989[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 1127931048
+06[0m[0m:47[0m[0m:46[0m[0m:074[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 2404919442
+06[0m[0m:47[0m[0m:46[0m[0m:156[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 4123175311
+06[0m[0m:47[0m[0m:46[0m[0m:239[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 3667343328
+06[0m[0m:47[0m[0m:46[0m[0m:328[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 1128207092
+Loading cached route 1128207092 {
+  '$typeName': 'meshtastic.RouteDiscovery',
+  route: [ 4294967295 ],
+  snrTowards: [ -128, 27 ],
+  routeBack: [ 4294967295 ],
+  snrBack: [ -128, -61 ]
+}
+06[0m[0m:47[0m[0m:46[0m[0m:429[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 1502064392
+06[0m[0m:47[0m[0m:46[0m[0m:511[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 412659972
+06[0m[0m:47[0m[0m:46[0m[0m:596[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 1365044228
+Loading cached route 1365044228 {
+  '$typeName': 'meshtastic.RouteDiscovery',
+  route: [],
+  snrTowards: [ -58 ],
+  routeBack: [],
+  snrBack: []
+}
+06[0m[0m:47[0m[0m:46[0m[0m:681[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 1977613920
+06[0m[0m:47[0m[0m:46[0m[0m:768[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 1128169124
+06[0m[0m:47[0m[0m:46[0m[0m:855[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 3624681121
+06[0m[0m:47[0m[0m:46[0m[0m:939[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 1127980764
+06[0m[0m:47[0m[0m:47[0m[0m:053[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 3927513980
+06[0m[0m:47[0m[0m:47[0m[0m:138[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 2504572019
+06[0m[0m:47[0m[0m:47[0m[0m:225[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 1129805964
+06[0m[0m:47[0m[0m:47[0m[0m:319[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 1683553483
+06[0m[0m:47[0m[0m:47[0m[0m:442[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 2426308192
+06[0m[0m:47[0m[0m:47[0m[0m:528[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 3672103180
+06[0m[0m:47[0m[0m:47[0m[0m:609[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 437603777
+06[0m[0m:47[0m[0m:47[0m[0m:720[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 3141070585
+06[0m[0m:47[0m[0m:47[0m[0m:816[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 2425775612
+06[0m[0m:47[0m[0m:47[0m[0m:897[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 3663495148
+06[0m[0m:47[0m[0m:47[0m[0m:979[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 3663186280
+06[0m[0m:47[0m[0m:48[0m[0m:061[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 3234011496
+06[0m[0m:47[0m[0m:48[0m[0m:159[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 862591108
+06[0m[0m:47[0m[0m:48[0m[0m:243[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 1439127256
+06[0m[0m:47[0m[0m:48[0m[0m:329[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 3806672652
+06[0m[0m:47[0m[0m:48[0m[0m:415[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 3118670690
+06[0m[0m:47[0m[0m:48[0m[0m:507[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 1128206452
+06[0m[0m:47[0m[0m:48[0m[0m:590[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 1127933428
+06[0m[0m:47[0m[0m:48[0m[0m:675[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 1129804508
+06[0m[0m:47[0m[0m:48[0m[0m:752[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 3806639372
+06[0m[0m:47[0m[0m:48[0m[0m:829[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 3744657166
+06[0m[0m:47[0m[0m:48[0m[0m:912[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 1579690083
+06[0m[0m:47[0m[0m:49[0m[0m:000[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 3662934524
+06[0m[0m:47[0m[0m:49[0m[0m:088[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 2057217257
+06[0m[0m:47[0m[0m:49[0m[0m:169[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 1037171397
+06[0m[0m:47[0m[0m:49[0m[0m:258[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 3858169345
+06[0m[0m:47[0m[0m:49[0m[0m:339[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 2475225012
+06[0m[0m:47[0m[0m:49[0m[0m:426[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 📱 Received Node Info packet for node: 2425773348
+06[0m[0m:47[0m[0m:49[0m[0m:527[0m[0m	[33m[1mWARN[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio ⚠️ Unhandled payload variant: fileInfo
+06[0m[0m:47[0m[0m:49[0m[0m:601[0m[0m	[33m[1mWARN[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio ⚠️ Unhandled payload variant: fileInfo
+06[0m[0m:47[0m[0m:49[0m[0m:678[0m[0m	[33m[1mWARN[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio ⚠️ Unhandled payload variant: fileInfo
+06[0m[0m:47[0m[0m:49[0m[0m:760[0m[0m	[33m[1mWARN[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio ⚠️ Unhandled payload variant: fileInfo
+06[0m[0m:47[0m[0m:49[0m[0m:824[0m[0m	[34m[1mINFO[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio ⚙️ Valid config id received from device: 343750688
+[meshtastic] Device Status 7
+[State] connectionStatus set connected
+(node:864754) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+[meshtastic] Device Status 5
+06[0m[0m:47[0m[0m:49[0m[0m:952[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 🚧 Received Queue Status: [object Object]
+06[0m[0m:47[0m[0m:50[0m[0m:016[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 🚧 Received Queue Status: [object Object]
+06[0m[0m:47[0m[0m:50[0m[0m:079[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 🚧 Received Queue Status: [object Object]
+06[0m[0m:47[0m[0m:50[0m[0m:144[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 🚧 Received Queue Status: [object Object]
+06[0m[0m:47[0m[0m:50[0m[0m:209[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 🚧 Received Queue Status: [object Object]
+06[0m[0m:47[0m[0m:50[0m[0m:271[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 🚧 Received Queue Status: [object Object]
+06[0m[0m:47[0m[0m:50[0m[0m:334[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 🚧 Received Queue Status: [object Object]
+06[0m[0m:47[0m[0m:50[0m[0m:394[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 🚧 Received Queue Status: [object Object]
+06[0m[0m:47[0m[0m:50[0m[0m:458[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 🚧 Received Queue Status: [object Object]
+06[0m[0m:47[0m[0m:50[0m[0m:529[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 🚧 Received Queue Status: [object Object]
+06[0m[0m:47[0m[0m:50[0m[0m:593[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 🚧 Received Queue Status: [object Object]
+06[0m[0m:47[0m[0m:50[0m[0m:659[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 🚧 Received Queue Status: [object Object]
+06[0m[0m:47[0m[0m:50[0m[0m:777[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received ROUTING_APP packet
+06[0m[0m:47[0m[0m:50[0m[0m:868[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received NODEINFO_APP packet
+06[0m[0m:47[0m[0m:50[0m[0m:957[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TELEMETRY_APP packet
+06[0m[0m:47[0m[0m:51[0m[0m:051[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received ROUTING_APP packet
+06[0m[0m:47[0m[0m:51[0m[0m:139[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received POSITION_APP packet
+06[0m[0m:47[0m[0m:51[0m[0m:259[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received ROUTING_APP packet
+Error received for packet 844831904: NO_RESPONSE
+06[0m[0m:47[0m[0m:51[0m[0m:348[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 🔐 Device received encrypted data packet, ignoring.
+06[0m[0m:47[0m[0m:51[0m[0m:426[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 🔐 Device received encrypted data packet, ignoring.
+06[0m[0m:47[0m[0m:51[0m[0m:506[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received STORE_FORWARD_APP packet
+06[0m[0m:47[0m[0m:51[0m[0m:782[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TELEMETRY_APP packet
+06[0m[0m:47[0m[0m:51[0m[0m:874[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received POSITION_APP packet
+06[0m[0m:47[0m[0m:51[0m[0m:969[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 🔐 Device received encrypted data packet, ignoring.
+06[0m[0m:47[0m[0m:52[0m[0m:053[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 🔐 Device received encrypted data packet, ignoring.
+06[0m[0m:47[0m[0m:52[0m[0m:135[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 🔐 Device received encrypted data packet, ignoring.
+06[0m[0m:47[0m[0m:52[0m[0m:221[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received ROUTING_APP packet
+06[0m[0m:47[0m[0m:52[0m[0m:302[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 🔐 Device received encrypted data packet, ignoring.
+06[0m[0m:47[0m[0m:52[0m[0m:400[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 🔐 Device received encrypted data packet, ignoring.
+06[0m[0m:47[0m[0m:52[0m[0m:491[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 🔐 Device received encrypted data packet, ignoring.
+06[0m[0m:47[0m[0m:52[0m[0m:617[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 🔐 Device received encrypted data packet, ignoring.
+06[0m[0m:47[0m[0m:52[0m[0m:700[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received POSITION_APP packet
+06[0m[0m:47[0m[0m:52[0m[0m:793[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received ROUTING_APP packet
+06[0m[0m:47[0m[0m:52[0m[0m:921[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received STORE_FORWARD_APP packet
+06[0m[0m:47[0m[0m:53[0m[0m:040[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received ROUTING_APP packet
+06[0m[0m:47[0m[0m:53[0m[0m:177[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received ROUTING_APP packet
+06[0m[0m:47[0m[0m:53[0m[0m:270[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received ROUTING_APP packet
+Error received for packet 938390237: NO_RESPONSE
+06[0m[0m:47[0m[0m:53[0m[0m:354[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 🔐 Device received encrypted data packet, ignoring.
+06[0m[0m:47[0m[0m:53[0m[0m:478[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 🔐 Device received encrypted data packet, ignoring.
+Sending {
+  message: 'Starenkasten offline. Last heard 703 minutes ago',
+  destination: null,
+  channel: 1,
+  wantAck: false
+}
+06[0m[0m:47[0m[0m:55[0m[0m:908[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 1
+06[0m[0m:47[0m[0m:55[0m[0m:918[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+06[0m[0m:47[0m[0m:55[0m[0m:926[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+[Meshtastic] Requesting Position for 3667344600
+06[0m[0m:47[0m[0m:55[0m[0m:961[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 3667344600
+Sending {
+  message: 'AmmerseeNode1 offline. Last heard 646 minutes ago',
+  destination: null,
+  channel: 1,
+  wantAck: false
+}
+06[0m[0m:47[0m[0m:55[0m[0m:970[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 1
+06[0m[0m:47[0m[0m:55[0m[0m:974[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+06[0m[0m:47[0m[0m:55[0m[0m:981[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+[Meshtastic] Requesting Position for 1127858072
+06[0m[0m:47[0m[0m:55[0m[0m:997[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127858072
+Sending {
+  message: '👽Blush Bridge👽 offline. Last heard 5635 minutes ago',
+  destination: null,
+  channel: 1,
+  wantAck: false
+}
+06[0m[0m:47[0m[0m:56[0m[0m:005[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 1
+06[0m[0m:47[0m[0m:56[0m[0m:009[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+06[0m[0m:47[0m[0m:56[0m[0m:016[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+[Meshtastic] Requesting Position for 1136063148
+06[0m[0m:47[0m[0m:56[0m[0m:037[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1136063148
+06[0m[0m:47[0m[0m:56[0m[0m:569[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 🚧 Received Queue Status: [object Object]
+06[0m[0m:47[0m[0m:56[0m[0m:650[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TELEMETRY_APP packet
+06[0m[0m:47[0m[0m:56[0m[0m:743[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TELEMETRY_APP packet
+06[0m[0m:47[0m[0m:57[0m[0m:302[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 🚧 Received Queue Status: [object Object]
+06[0m[0m:47[0m[0m:57[0m[0m:901[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 🚧 Received Queue Status: [object Object]
+06[0m[0m:47[0m[0m:57[0m[0m:978[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received ROUTING_APP packet
+06[0m[0m:47[0m[0m:58[0m[0m:444[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 🚧 Received Queue Status: [object Object]
+06[0m[0m:47[0m[0m:59[0m[0m:014[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 🚧 Received Queue Status: [object Object]
+06[0m[0m:47[0m[0m:59[0m[0m:444[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleFromRadio 🚧 Received Queue Status: [object Object]
+Packet 995199147 of type wantConfigId timed out
+06[0m[0m:48[0m[0m:41[0m[0m:587[0m[0m	[33m[1mWARN[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	Connect Configuration warning: undefined
+06[0m[0m:48[0m[0m:43[0m[0m:692[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 🔐 Device received encrypted data packet, ignoring.
+06[0m[0m:48[0m[0m:55[0m[0m:677[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TELEMETRY_APP packet
+Packet 440599171 of type packet timed out
+[object Object]
+Packet 224408222 of type packet timed out
+[object Object]
+Packet 339889873 of type packet timed out
+[object Object]
+Packet 199218930 of type packet timed out
+[object Object]
+Packet 614597453 of type packet timed out
+[object Object]
+[WSS] Connection from ::ffff:127.0.0.1:60190
+Unable to parse data | SyntaxError: Unexpected token 'd', "deviceConfig" is not valid JSON
+Sending {
+  message: 'Die Haftpflichtversicherung als absolutes Muss',
+  destination: undefined,
+  channel: 3,
+  wantAck: false
+}
+06[0m[0m:49[0m[0m:58[0m[0m:070[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 3
+06[0m[0m:49[0m[0m:58[0m[0m:088[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+06[0m[0m:49[0m[0m:58[0m[0m:100[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+Sending {
+  message: 'Biden kritisiert Trump: "So viel zerstört"',
+  destination: undefined,
+  channel: 3,
+  wantAck: false
+}
+06[0m[0m:49[0m[0m:58[0m[0m:168[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 3
+06[0m[0m:49[0m[0m:58[0m[0m:177[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+06[0m[0m:49[0m[0m:58[0m[0m:189[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+Sending {
+  message: 'Marktbericht: Stimmungsdämpfer von Nvidia für die Börsen',
+  destination: undefined,
+  channel: 3,
+  wantAck: false
+}
+06[0m[0m:49[0m[0m:58[0m[0m:249[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 3
+06[0m[0m:49[0m[0m:58[0m[0m:254[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+06[0m[0m:49[0m[0m:58[0m[0m:273[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+Sending {
+  message: 'USA-Liveblog: ++ Kanadischer Univerband warnt vor Reisen++',
+  destination: undefined,
+  channel: 3,
+  wantAck: false
+}
+06[0m[0m:49[0m[0m:58[0m[0m:323[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 3
+06[0m[0m:49[0m[0m:58[0m[0m:341[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+06[0m[0m:49[0m[0m:58[0m[0m:358[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+Sending {
+  message: 'China startet trotz Zoll-Streit mit 5,4 Prozent Wachstum ins Jahr',
+  destination: undefined,
+  channel: 3,
+  wantAck: false
+}
+06[0m[0m:49[0m[0m:58[0m[0m:403[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 3
+06[0m[0m:49[0m[0m:58[0m[0m:412[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+06[0m[0m:49[0m[0m:58[0m[0m:433[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+Sending {
+  message: 'WHO-Mitglieder einigen sich auf Pandemie-Abkommen',
+  destination: undefined,
+  channel: 3,
+  wantAck: false
+}
+06[0m[0m:49[0m[0m:58[0m[0m:480[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 3
+06[0m[0m:49[0m[0m:58[0m[0m:483[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+06[0m[0m:49[0m[0m:58[0m[0m:496[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+Sending {
+  message: 'Marschflugkörper für die Ukraine? Warum wieder über "Taurus" diskutiert wird',
+  destination: undefined,
+  channel: 3,
+  wantAck: false
+}
+06[0m[0m:49[0m[0m:58[0m[0m:534[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 3
+06[0m[0m:49[0m[0m:58[0m[0m:541[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+06[0m[0m:49[0m[0m:58[0m[0m:570[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+Sending {
+  message: 'Marktbericht: US-Anleger bleiben vorsichtig',
+  destination: undefined,
+  channel: 3,
+  wantAck: false
+}
+06[0m[0m:49[0m[0m:58[0m[0m:606[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 3
+06[0m[0m:49[0m[0m:58[0m[0m:614[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+06[0m[0m:49[0m[0m:58[0m[0m:629[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+Sending {
+  message: 'Netanjahu besucht israelische Truppen in Gaza und droht der Hamas',
+  destination: undefined,
+  channel: 3,
+  wantAck: false
+}
+06[0m[0m:49[0m[0m:58[0m[0m:684[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 3
+06[0m[0m:49[0m[0m:58[0m[0m:689[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+06[0m[0m:49[0m[0m:58[0m[0m:698[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+Sending {
+  message: 'EU und Großbritannien stocken Sudan-Hilfe auf',
+  destination: undefined,
+  channel: 3,
+  wantAck: false
+}
+06[0m[0m:49[0m[0m:58[0m[0m:757[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 3
+06[0m[0m:49[0m[0m:58[0m[0m:762[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+06[0m[0m:49[0m[0m:58[0m[0m:798[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+Sending {
+  message: 'Ukraine-Liveblog: ++ Rutte trifft Selenskyj in Odessa ++',
+  destination: undefined,
+  channel: 3,
+  wantAck: false
+}
+06[0m[0m:49[0m[0m:58[0m[0m:852[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 3
+06[0m[0m:49[0m[0m:58[0m[0m:864[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+06[0m[0m:49[0m[0m:58[0m[0m:877[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+06[0m[0m:50[0m[0m:02[0m[0m:015[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+[meshtastic] Device Status 4
+06[0m[0m:50[0m[0m:05[0m[0m:277[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+06[0m[0m:50[0m[0m:08[0m[0m:540[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+06[0m[0m:50[0m[0m:11[0m[0m:805[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+06[0m[0m:50[0m[0m:15[0m[0m:069[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+06[0m[0m:50[0m[0m:18[0m[0m:332[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+06[0m[0m:50[0m[0m:21[0m[0m:596[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+06[0m[0m:50[0m[0m:24[0m[0m:860[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+06[0m[0m:50[0m[0m:28[0m[0m:125[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+06[0m[0m:50[0m[0m:31[0m[0m:388[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+06[0m[0m:50[0m[0m:34[0m[0m:652[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+Packet 629271007 of type packet timed out
+[object Object]
+Packet 637829868 of type packet timed out
+[object Object]
+Packet 307438396 of type packet timed out
+[object Object]
+Packet 8127974 of type packet timed out
+[object Object]
+Packet 894910665 of type packet timed out
+[object Object]
+Packet 470850215 of type packet timed out
+[object Object]
+Packet 570434426 of type packet timed out
+[object Object]
+Packet 724828162 of type packet timed out
+[object Object]
+Packet 623439443 of type packet timed out
+[object Object]
+Packet 389666091 of type packet timed out
+[object Object]
+Packet 330018618 of type packet timed out
+[object Object]
+06[0m[0m:51[0m[0m:06[0m[0m:117[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+[meshtastic] Device Status 5
+[WSS] Connection from ::ffff:192.168.178.103:38798
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:47[0m[0m:55[0m[0m:987[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Sending {
+  message: 'Starenkasten offline. Last heard 763 minutes ago',
+  destination: null,
+  channel: 1,
+  wantAck: false
+}
+07[0m[0m:47[0m[0m:56[0m[0m:019[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 1
+07[0m[0m:47[0m[0m:56[0m[0m:039[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+07[0m[0m:47[0m[0m:56[0m[0m:068[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+[Meshtastic] Requesting Position for 3667344600
+07[0m[0m:47[0m[0m:56[0m[0m:143[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 3667344600
+Sending {
+  message: 'AmmerseeNode1 offline. Last heard 706 minutes ago',
+  destination: null,
+  channel: 1,
+  wantAck: false
+}
+07[0m[0m:47[0m[0m:56[0m[0m:153[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 1
+07[0m[0m:47[0m[0m:56[0m[0m:160[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+07[0m[0m:47[0m[0m:56[0m[0m:172[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+[Meshtastic] Requesting Position for 1127858072
+07[0m[0m:47[0m[0m:56[0m[0m:197[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127858072
+Sending {
+  message: '👽Blush Bridge👽 offline. Last heard 5695 minutes ago',
+  destination: null,
+  channel: 1,
+  wantAck: false
+}
+07[0m[0m:47[0m[0m:56[0m[0m:203[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 1
+07[0m[0m:47[0m[0m:56[0m[0m:212[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+07[0m[0m:47[0m[0m:56[0m[0m:221[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+[Meshtastic] Requesting Position for 1136063148
+07[0m[0m:47[0m[0m:56[0m[0m:243[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1136063148
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:48[0m[0m:10[0m[0m:988[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:48[0m[0m:25[0m[0m:989[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:48[0m[0m:40[0m[0m:992[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:48[0m[0m:55[0m[0m:990[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 970227329 of type packet timed out
+[object Object]
+Packet 544223270 of type packet timed out
+[object Object]
+Packet 520498574 of type packet timed out
+[object Object]
+Packet 52765578 of type packet timed out
+[object Object]
+Packet 533951039 of type packet timed out
+[object Object]
+Packet 712966603 of type packet timed out
+[object Object]
+Packet 962650410 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:49[0m[0m:10[0m[0m:986[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 28150539 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:49[0m[0m:25[0m[0m:989[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 634769794 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:49[0m[0m:40[0m[0m:987[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 160799066 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:49[0m[0m:55[0m[0m:989[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 433010840 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:50[0m[0m:10[0m[0m:991[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 639875077 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:50[0m[0m:25[0m[0m:993[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 888391467 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:50[0m[0m:40[0m[0m:993[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 418619965 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:50[0m[0m:55[0m[0m:989[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 34169532 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:51[0m[0m:10[0m[0m:989[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 104402802 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:51[0m[0m:25[0m[0m:993[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 469406930 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:51[0m[0m:40[0m[0m:989[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 58108102 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:51[0m[0m:55[0m[0m:989[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 418662624 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:52[0m[0m:10[0m[0m:990[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 768274071 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:52[0m[0m:26[0m[0m:005[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 945118862 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:52[0m[0m:40[0m[0m:999[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 51889421 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:52[0m[0m:55[0m[0m:990[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 704592963 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:53[0m[0m:10[0m[0m:995[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 773190042 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:53[0m[0m:25[0m[0m:992[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 306778235 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:53[0m[0m:40[0m[0m:992[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 405009287 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:53[0m[0m:55[0m[0m:992[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 635941354 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:54[0m[0m:11[0m[0m:003[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 608117005 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:54[0m[0m:25[0m[0m:991[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 720089922 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:54[0m[0m:40[0m[0m:996[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 408877927 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:54[0m[0m:55[0m[0m:995[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 537808801 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:55[0m[0m:10[0m[0m:994[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 936310287 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:55[0m[0m:25[0m[0m:996[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 836496431 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:55[0m[0m:40[0m[0m:993[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 857436609 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:55[0m[0m:56[0m[0m:003[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 946592361 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:56[0m[0m:10[0m[0m:994[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 944917226 of type packet timed out
+[object Object]
+07[0m[0m:56[0m[0m:22[0m[0m:722[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+[meshtastic] Device Status 4
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:56[0m[0m:25[0m[0m:993[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 258889976 of type packet timed out
+[object Object]
+07[0m[0m:56[0m[0m:34[0m[0m:699[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:56[0m[0m:40[0m[0m:994[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 627689904 of type packet timed out
+[object Object]
+07[0m[0m:56[0m[0m:46[0m[0m:678[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:56[0m[0m:55[0m[0m:993[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 427039316 of type packet timed out
+[object Object]
+07[0m[0m:56[0m[0m:57[0m[0m:157[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+07[0m[0m:57[0m[0m:05[0m[0m:852[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+07[0m[0m:57[0m[0m:09[0m[0m:756[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:57[0m[0m:10[0m[0m:997[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 957444508 of type packet timed out
+[object Object]
+07[0m[0m:57[0m[0m:13[0m[0m:756[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+07[0m[0m:57[0m[0m:16[0m[0m:924[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+07[0m[0m:57[0m[0m:23[0m[0m:069[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+07[0m[0m:57[0m[0m:23[0m[0m:078[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:57[0m[0m:25[0m[0m:998[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 16576664 of type packet timed out
+[object Object]
+07[0m[0m:57[0m[0m:26[0m[0m:140[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+07[0m[0m:57[0m[0m:26[0m[0m:146[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+07[0m[0m:57[0m[0m:29[0m[0m:212[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+07[0m[0m:57[0m[0m:29[0m[0m:217[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+07[0m[0m:57[0m[0m:32[0m[0m:284[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+07[0m[0m:57[0m[0m:32[0m[0m:287[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+07[0m[0m:57[0m[0m:35[0m[0m:356[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+07[0m[0m:57[0m[0m:35[0m[0m:363[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+07[0m[0m:57[0m[0m:38[0m[0m:428[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+[object Object]
+(node:864754) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 154)
+07[0m[0m:57[0m[0m:38[0m[0m:446[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:57[0m[0m:40[0m[0m:994[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 599682103 of type packet timed out
+[object Object]
+07[0m[0m:57[0m[0m:41[0m[0m:500[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+07[0m[0m:57[0m[0m:41[0m[0m:504[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+07[0m[0m:57[0m[0m:44[0m[0m:572[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+07[0m[0m:57[0m[0m:47[0m[0m:644[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+07[0m[0m:57[0m[0m:50[0m[0m:716[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+07[0m[0m:57[0m[0m:53[0m[0m:788[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+07[0m[0m:57[0m[0m:55[0m[0m:093[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:57[0m[0m:55[0m[0m:997[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 263445379 of type packet timed out
+[object Object]
+[meshtastic] Device Status 5
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:58[0m[0m:10[0m[0m:995[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 862265770 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:58[0m[0m:25[0m[0m:993[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 518537469 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:58[0m[0m:40[0m[0m:998[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 621180329 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:58[0m[0m:55[0m[0m:997[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 615448629 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:59[0m[0m:10[0m[0m:996[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 761450215 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:59[0m[0m:25[0m[0m:997[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 222665277 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:59[0m[0m:40[0m[0m:996[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 105829403 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+07[0m[0m:59[0m[0m:56[0m[0m:001[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 917000489 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:00[0m[0m:11[0m[0m:000[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 712065160 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:00[0m[0m:26[0m[0m:002[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 329969341 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:00[0m[0m:41[0m[0m:004[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 280697629 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:00[0m[0m:56[0m[0m:004[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 774884535 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:01[0m[0m:11[0m[0m:003[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 715098413 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:01[0m[0m:26[0m[0m:000[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 469091554 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:01[0m[0m:41[0m[0m:007[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 414900833 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:01[0m[0m:56[0m[0m:001[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 889344396 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:02[0m[0m:11[0m[0m:001[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 895612099 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:02[0m[0m:26[0m[0m:004[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 698670342 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:02[0m[0m:41[0m[0m:003[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 76955078 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:02[0m[0m:56[0m[0m:011[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 489176367 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:03[0m[0m:11[0m[0m:007[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 420347183 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:03[0m[0m:26[0m[0m:006[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 874982768 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:03[0m[0m:41[0m[0m:005[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 207005834 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:03[0m[0m:56[0m[0m:008[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 298691878 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:04[0m[0m:11[0m[0m:009[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 705445265 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:04[0m[0m:26[0m[0m:010[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 125387822 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:04[0m[0m:41[0m[0m:015[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 482099344 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:04[0m[0m:56[0m[0m:008[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 543476485 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:05[0m[0m:11[0m[0m:019[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 497481194 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:05[0m[0m:26[0m[0m:010[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 373663289 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:05[0m[0m:41[0m[0m:009[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 576006015 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:05[0m[0m:56[0m[0m:010[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 495773785 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:06[0m[0m:11[0m[0m:017[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 719073422 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:06[0m[0m:26[0m[0m:016[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 512248418 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:06[0m[0m:41[0m[0m:012[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 298176239 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:06[0m[0m:56[0m[0m:013[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 889926305 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:07[0m[0m:11[0m[0m:012[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 501660909 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:07[0m[0m:26[0m[0m:014[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 426152228 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:07[0m[0m:41[0m[0m:016[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 383699904 of type packet timed out
+[object Object]
+08[0m[0m:07[0m[0m:49[0m[0m:913[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+[meshtastic] Device Status 4
+[meshtastic] Device Status 5
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:07[0m[0m:56[0m[0m:023[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 119624622 of type packet timed out
+[object Object]
+08[0m[0m:08[0m[0m:00[0m[0m:196[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+[meshtastic] Device Status 4
+08[0m[0m:08[0m[0m:10[0m[0m:888[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+08[0m[0m:08[0m[0m:10[0m[0m:902[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:08[0m[0m:11[0m[0m:016[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 368075217 of type packet timed out
+[object Object]
+08[0m[0m:08[0m[0m:21[0m[0m:574[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+08[0m[0m:08[0m[0m:23[0m[0m:036[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:08[0m[0m:23[0m[0m:042[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:08[0m[0m:26[0m[0m:022[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 734539438 of type packet timed out
+[object Object]
+08[0m[0m:08[0m[0m:26[0m[0m:108[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:08[0m[0m:29[0m[0m:180[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+08[0m[0m:08[0m[0m:29[0m[0m:188[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:08[0m[0m:32[0m[0m:252[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:08[0m[0m:35[0m[0m:324[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:08[0m[0m:38[0m[0m:396[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:08[0m[0m:41[0m[0m:016[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 668780688 of type packet timed out
+[object Object]
+08[0m[0m:08[0m[0m:41[0m[0m:468[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:08[0m[0m:41[0m[0m:478[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+08[0m[0m:08[0m[0m:53[0m[0m:346[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:08[0m[0m:56[0m[0m:017[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 577719301 of type packet timed out
+[object Object]
+08[0m[0m:08[0m[0m:57[0m[0m:916[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:08[0m[0m:57[0m[0m:920[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+08[0m[0m:09[0m[0m:00[0m[0m:988[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:09[0m[0m:04[0m[0m:061[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:09[0m[0m:07[0m[0m:132[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:09[0m[0m:10[0m[0m:204[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:09[0m[0m:11[0m[0m:021[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 672703842 of type packet timed out
+[object Object]
+08[0m[0m:09[0m[0m:13[0m[0m:276[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:09[0m[0m:13[0m[0m:284[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+08[0m[0m:09[0m[0m:16[0m[0m:348[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:09[0m[0m:19[0m[0m:420[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:09[0m[0m:22[0m[0m:492[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:09[0m[0m:25[0m[0m:564[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:09[0m[0m:26[0m[0m:016[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 496555773 of type packet timed out
+[object Object]
+08[0m[0m:09[0m[0m:28[0m[0m:637[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+08[0m[0m:09[0m[0m:28[0m[0m:645[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:09[0m[0m:31[0m[0m:709[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:09[0m[0m:34[0m[0m:780[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:09[0m[0m:37[0m[0m:852[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:09[0m[0m:40[0m[0m:924[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:09[0m[0m:41[0m[0m:018[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 484792466 of type packet timed out
+[object Object]
+08[0m[0m:09[0m[0m:51[0m[0m:337[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+08[0m[0m:09[0m[0m:53[0m[0m:335[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:09[0m[0m:56[0m[0m:020[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 547479479 of type packet timed out
+[object Object]
+08[0m[0m:09[0m[0m:57[0m[0m:917[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:09[0m[0m:57[0m[0m:927[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+08[0m[0m:10[0m[0m:00[0m[0m:988[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:10[0m[0m:04[0m[0m:060[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:10[0m[0m:07[0m[0m:132[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:10[0m[0m:10[0m[0m:204[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:10[0m[0m:11[0m[0m:017[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 208848098 of type packet timed out
+[object Object]
+08[0m[0m:10[0m[0m:13[0m[0m:281[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:10[0m[0m:13[0m[0m:294[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+08[0m[0m:10[0m[0m:16[0m[0m:349[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:10[0m[0m:19[0m[0m:420[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:10[0m[0m:22[0m[0m:492[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:10[0m[0m:25[0m[0m:564[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:10[0m[0m:26[0m[0m:024[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 168489940 of type packet timed out
+[object Object]
+08[0m[0m:10[0m[0m:28[0m[0m:636[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+08[0m[0m:10[0m[0m:28[0m[0m:643[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:10[0m[0m:31[0m[0m:708[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:10[0m[0m:34[0m[0m:780[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:10[0m[0m:37[0m[0m:852[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:10[0m[0m:40[0m[0m:924[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:10[0m[0m:41[0m[0m:018[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 781153647 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:10[0m[0m:56[0m[0m:020[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 548536721 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:11[0m[0m:11[0m[0m:018[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 924429663 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:11[0m[0m:26[0m[0m:018[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 693108909 of type packet timed out
+[object Object]
+08[0m[0m:11[0m[0m:26[0m[0m:852[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+[meshtastic] Device Status 5
+08[0m[0m:11[0m[0m:39[0m[0m:138[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+[meshtastic] Device Status 4
+[meshtastic] Device Status 5
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:11[0m[0m:41[0m[0m:018[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 813970136 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:11[0m[0m:56[0m[0m:023[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 585253576 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:12[0m[0m:11[0m[0m:017[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 325787401 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:12[0m[0m:26[0m[0m:020[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 846735112 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:12[0m[0m:41[0m[0m:020[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 511924073 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:12[0m[0m:56[0m[0m:020[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 400006926 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:13[0m[0m:11[0m[0m:021[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 793943681 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:13[0m[0m:26[0m[0m:023[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 455996508 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:13[0m[0m:41[0m[0m:022[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 628498229 of type packet timed out
+[object Object]
+08[0m[0m:13[0m[0m:42[0m[0m:047[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+[meshtastic] Device Status 4
+08[0m[0m:13[0m[0m:43[0m[0m:046[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:13[0m[0m:52[0m[0m:527[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+08[0m[0m:13[0m[0m:55[0m[0m:023[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:13[0m[0m:56[0m[0m:020[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 245666402 of type packet timed out
+[object Object]
+08[0m[0m:13[0m[0m:56[0m[0m:732[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+08[0m[0m:13[0m[0m:59[0m[0m:964[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:14[0m[0m:03[0m[0m:261[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:14[0m[0m:06[0m[0m:332[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:14[0m[0m:09[0m[0m:404[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:14[0m[0m:11[0m[0m:033[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 615517408 of type packet timed out
+[object Object]
+08[0m[0m:14[0m[0m:12[0m[0m:476[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:14[0m[0m:12[0m[0m:483[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+08[0m[0m:14[0m[0m:15[0m[0m:548[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:14[0m[0m:18[0m[0m:621[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:14[0m[0m:21[0m[0m:692[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:14[0m[0m:24[0m[0m:764[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:14[0m[0m:26[0m[0m:028[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 174171370 of type packet timed out
+[object Object]
+08[0m[0m:14[0m[0m:27[0m[0m:837[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:14[0m[0m:27[0m[0m:842[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+08[0m[0m:14[0m[0m:30[0m[0m:909[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:14[0m[0m:33[0m[0m:980[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:14[0m[0m:37[0m[0m:052[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:14[0m[0m:40[0m[0m:124[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:14[0m[0m:41[0m[0m:022[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 492215117 of type packet timed out
+[object Object]
+08[0m[0m:14[0m[0m:43[0m[0m:196[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:14[0m[0m:43[0m[0m:201[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+08[0m[0m:14[0m[0m:55[0m[0m:101[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:14[0m[0m:56[0m[0m:023[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 517757855 of type packet timed out
+[object Object]
+08[0m[0m:14[0m[0m:59[0m[0m:292[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+08[0m[0m:14[0m[0m:59[0m[0m:300[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:15[0m[0m:02[0m[0m:364[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:15[0m[0m:05[0m[0m:436[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:15[0m[0m:08[0m[0m:508[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:15[0m[0m:11[0m[0m:026[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 677115337 of type packet timed out
+[object Object]
+08[0m[0m:15[0m[0m:11[0m[0m:580[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:15[0m[0m:11[0m[0m:584[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+08[0m[0m:15[0m[0m:14[0m[0m:652[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:15[0m[0m:17[0m[0m:724[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:15[0m[0m:20[0m[0m:796[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:15[0m[0m:23[0m[0m:868[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:15[0m[0m:26[0m[0m:022[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 167872675 of type packet timed out
+[object Object]
+08[0m[0m:15[0m[0m:26[0m[0m:941[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:15[0m[0m:26[0m[0m:946[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+08[0m[0m:15[0m[0m:30[0m[0m:012[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:15[0m[0m:33[0m[0m:084[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:15[0m[0m:36[0m[0m:156[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:15[0m[0m:39[0m[0m:228[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:15[0m[0m:41[0m[0m:028[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 634434328 of type packet timed out
+[object Object]
+08[0m[0m:15[0m[0m:42[0m[0m:300[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+08[0m[0m:15[0m[0m:42[0m[0m:306[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:15[0m[0m:56[0m[0m:023[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 150980618 of type packet timed out
+[object Object]
+08[0m[0m:16[0m[0m:06[0m[0m:358[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:16[0m[0m:11[0m[0m:022[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 576582575 of type packet timed out
+[object Object]
+08[0m[0m:16[0m[0m:15[0m[0m:324[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:16[0m[0m:26[0m[0m:027[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 319192686 of type packet timed out
+[object Object]
+08[0m[0m:16[0m[0m:36[0m[0m:313[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:16[0m[0m:41[0m[0m:024[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 337959477 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:16[0m[0m:56[0m[0m:026[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 875452492 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:17[0m[0m:11[0m[0m:023[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 11844274 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:17[0m[0m:26[0m[0m:027[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 527930909 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:17[0m[0m:41[0m[0m:022[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 110935367 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:17[0m[0m:56[0m[0m:029[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 911192020 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:18[0m[0m:11[0m[0m:027[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 227352146 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:18[0m[0m:26[0m[0m:024[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 843235139 of type packet timed out
+[object Object]
+08[0m[0m:18[0m[0m:32[0m[0m:836[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+[meshtastic] Device Status 5
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:18[0m[0m:41[0m[0m:024[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 924193091 of type packet timed out
+[object Object]
+08[0m[0m:18[0m[0m:53[0m[0m:312[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+[meshtastic] Device Status 4
+[meshtastic] Device Status 5
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:18[0m[0m:56[0m[0m:026[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 562546865 of type packet timed out
+[object Object]
+[object Object]
+(node:864754) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 288)
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:19[0m[0m:11[0m[0m:028[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 772292755 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:19[0m[0m:26[0m[0m:029[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 876962013 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:19[0m[0m:41[0m[0m:028[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 153684534 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:19[0m[0m:56[0m[0m:030[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 447368907 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:20[0m[0m:11[0m[0m:026[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 166874847 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:20[0m[0m:26[0m[0m:026[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 533813432 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:20[0m[0m:41[0m[0m:026[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 850890043 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:20[0m[0m:56[0m[0m:035[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 435957516 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:21[0m[0m:11[0m[0m:028[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 566156178 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:21[0m[0m:26[0m[0m:031[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 57884620 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:21[0m[0m:41[0m[0m:028[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 566486085 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:21[0m[0m:56[0m[0m:034[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 823961676 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:22[0m[0m:11[0m[0m:028[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 415184741 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:22[0m[0m:26[0m[0m:036[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 505824347 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:22[0m[0m:41[0m[0m:032[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 963010334 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:22[0m[0m:56[0m[0m:041[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 65618378 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:23[0m[0m:11[0m[0m:030[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 681680329 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:23[0m[0m:26[0m[0m:031[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 96164053 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:23[0m[0m:41[0m[0m:031[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 465349397 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:23[0m[0m:56[0m[0m:031[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 16671949 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:24[0m[0m:11[0m[0m:037[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 676363276 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:24[0m[0m:26[0m[0m:036[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 732316308 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:24[0m[0m:41[0m[0m:033[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 533628861 of type packet timed out
+[object Object]
+08[0m[0m:24[0m[0m:51[0m[0m:498[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+[meshtastic] Device Status 4
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:24[0m[0m:56[0m[0m:030[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 863995927 of type packet timed out
+[object Object]
+08[0m[0m:25[0m[0m:06[0m[0m:470[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:25[0m[0m:11[0m[0m:031[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 28974018 of type packet timed out
+[object Object]
+08[0m[0m:25[0m[0m:14[0m[0m:300[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:25[0m[0m:26[0m[0m:038[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 202400834 of type packet timed out
+[object Object]
+08[0m[0m:25[0m[0m:30[0m[0m:332[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:25[0m[0m:41[0m[0m:031[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 957680209 of type packet timed out
+[object Object]
+08[0m[0m:25[0m[0m:44[0m[0m:316[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:25[0m[0m:56[0m[0m:033[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 611481692 of type packet timed out
+[object Object]
+08[0m[0m:25[0m[0m:59[0m[0m:324[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:26[0m[0m:11[0m[0m:030[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 283614725 of type packet timed out
+[object Object]
+08[0m[0m:26[0m[0m:14[0m[0m:300[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+08[0m[0m:26[0m[0m:17[0m[0m:731[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+[meshtastic] Device Status 5
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:26[0m[0m:26[0m[0m:036[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 437877749 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:26[0m[0m:41[0m[0m:035[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 851053022 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:26[0m[0m:56[0m[0m:032[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 506622859 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:27[0m[0m:11[0m[0m:035[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 169444001 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:27[0m[0m:26[0m[0m:033[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 630986700 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:27[0m[0m:41[0m[0m:042[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 621088123 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:27[0m[0m:56[0m[0m:035[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 93920325 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:28[0m[0m:11[0m[0m:037[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 531502815 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:28[0m[0m:26[0m[0m:038[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 509879210 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:28[0m[0m:41[0m[0m:039[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 67144203 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:28[0m[0m:56[0m[0m:042[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 367679266 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:29[0m[0m:11[0m[0m:043[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 345678797 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:29[0m[0m:26[0m[0m:050[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 877665713 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:29[0m[0m:41[0m[0m:046[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 575264830 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:29[0m[0m:56[0m[0m:042[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 369673637 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:30[0m[0m:11[0m[0m:045[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 442416429 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:30[0m[0m:26[0m[0m:046[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 512475956 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:30[0m[0m:41[0m[0m:055[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 68350635 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:30[0m[0m:56[0m[0m:042[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 94235115 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:31[0m[0m:11[0m[0m:055[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 676300637 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:31[0m[0m:26[0m[0m:045[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 184605006 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:31[0m[0m:41[0m[0m:045[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 833763817 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:31[0m[0m:56[0m[0m:044[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 704631647 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:32[0m[0m:11[0m[0m:044[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 172369226 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:32[0m[0m:26[0m[0m:052[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 842057045 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:32[0m[0m:41[0m[0m:049[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 852779388 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:32[0m[0m:56[0m[0m:046[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 691687823 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:33[0m[0m:11[0m[0m:046[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 795323963 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:33[0m[0m:26[0m[0m:054[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 742806615 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:33[0m[0m:41[0m[0m:052[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 199268549 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:33[0m[0m:56[0m[0m:049[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 699739972 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:34[0m[0m:11[0m[0m:048[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 551934786 of type packet timed out
+[object Object]
+08[0m[0m:34[0m[0m:21[0m[0m:696[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+[meshtastic] Device Status 4
+[meshtastic] Device Status 5
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:34[0m[0m:26[0m[0m:051[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 59493764 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:34[0m[0m:41[0m[0m:057[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 314622929 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:34[0m[0m:56[0m[0m:050[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 781516998 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:35[0m[0m:11[0m[0m:048[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 139500651 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:35[0m[0m:26[0m[0m:050[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 844157899 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:35[0m[0m:41[0m[0m:048[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 46896456 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:35[0m[0m:56[0m[0m:051[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 358399375 of type packet timed out
+[object Object]
+08[0m[0m:36[0m[0m:03[0m[0m:452[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+[meshtastic] Device Status 4
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:36[0m[0m:11[0m[0m:049[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 742167929 of type packet timed out
+[object Object]
+08[0m[0m:36[0m[0m:13[0m[0m:937[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+08[0m[0m:36[0m[0m:17[0m[0m:212[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+08[0m[0m:36[0m[0m:20[0m[0m:477[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+08[0m[0m:36[0m[0m:23[0m[0m:740[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:36[0m[0m:26[0m[0m:049[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 162624031 of type packet timed out
+[object Object]
+08[0m[0m:36[0m[0m:27[0m[0m:004[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+08[0m[0m:36[0m[0m:30[0m[0m:268[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+08[0m[0m:36[0m[0m:33[0m[0m:532[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+[object Object]
+(node:864754) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 424)
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:36[0m[0m:41[0m[0m:051[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 250351630 of type packet timed out
+[object Object]
+08[0m[0m:36[0m[0m:43[0m[0m:392[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+08[0m[0m:36[0m[0m:44[0m[0m:417[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+[meshtastic] Device Status 5
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:36[0m[0m:56[0m[0m:051[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 937665119 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:37[0m[0m:11[0m[0m:052[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 905071037 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:37[0m[0m:26[0m[0m:050[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 863204836 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:37[0m[0m:41[0m[0m:050[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 328364378 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:37[0m[0m:56[0m[0m:053[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 963233471 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:38[0m[0m:11[0m[0m:051[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 617184246 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:38[0m[0m:26[0m[0m:051[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 276478926 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:38[0m[0m:41[0m[0m:055[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 80761605 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:38[0m[0m:56[0m[0m:054[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 751955426 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:39[0m[0m:11[0m[0m:057[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 349001322 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:39[0m[0m:26[0m[0m:056[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 980986905 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:39[0m[0m:41[0m[0m:052[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 434005487 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:39[0m[0m:56[0m[0m:054[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 595513061 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:40[0m[0m:11[0m[0m:054[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 633257393 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:40[0m[0m:26[0m[0m:051[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 527675221 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:40[0m[0m:41[0m[0m:058[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 278463097 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:40[0m[0m:56[0m[0m:056[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 991496356 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:41[0m[0m:11[0m[0m:052[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 714858754 of type packet timed out
+[object Object]
+08[0m[0m:41[0m[0m:14[0m[0m:757[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+[meshtastic] Device Status 4
+[meshtastic] Device Status 5
+[object Object]
+(node:864754) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 452)
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:41[0m[0m:26[0m[0m:056[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 669829401 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:41[0m[0m:41[0m[0m:059[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 718322777 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:41[0m[0m:56[0m[0m:061[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 170224378 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:42[0m[0m:11[0m[0m:059[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 992005214 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:42[0m[0m:26[0m[0m:056[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 587293834 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:42[0m[0m:41[0m[0m:055[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 702869766 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:42[0m[0m:56[0m[0m:059[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 666940374 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:43[0m[0m:11[0m[0m:059[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 926955612 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:43[0m[0m:26[0m[0m:058[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 235878204 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:43[0m[0m:41[0m[0m:054[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 34043158 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:43[0m[0m:56[0m[0m:056[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 719434138 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:44[0m[0m:11[0m[0m:061[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 30451988 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:44[0m[0m:26[0m[0m:054[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 291581618 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:44[0m[0m:41[0m[0m:062[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 327763889 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:44[0m[0m:56[0m[0m:059[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 10151191 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:45[0m[0m:11[0m[0m:060[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 865259845 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:45[0m[0m:26[0m[0m:058[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 646324043 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:45[0m[0m:41[0m[0m:068[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 57827492 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:45[0m[0m:56[0m[0m:063[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 752450003 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:46[0m[0m:11[0m[0m:054[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 141534645 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:46[0m[0m:26[0m[0m:056[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 494593584 of type packet timed out
+[object Object]
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:46[0m[0m:41[0m[0m:058[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 148954034 of type packet timed out
+[object Object]
+08[0m[0m:46[0m[0m:51[0m[0m:651[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+[meshtastic] Device Status 4
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:46[0m[0m:56[0m[0m:059[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 925279540 of type packet timed out
+[object Object]
+08[0m[0m:47[0m[0m:06[0m[0m:621[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:47[0m[0m:11[0m[0m:061[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 513707267 of type packet timed out
+[object Object]
+08[0m[0m:47[0m[0m:21[0m[0m:597[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:47[0m[0m:26[0m[0m:063[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 993356538 of type packet timed out
+[object Object]
+08[0m[0m:47[0m[0m:36[0m[0m:576[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+Node reached warning time. Calling
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:47[0m[0m:41[0m[0m:064[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 50213045 of type packet timed out
+[object Object]
+08[0m[0m:47[0m[0m:44[0m[0m:348[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+Sending {
+  message: 'Nico Mobil offline. Last heard 120 minutes ago',
+  destination: null,
+  channel: 1,
+  wantAck: false
+}
+08[0m[0m:47[0m[0m:56[0m[0m:061[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 1
+08[0m[0m:47[0m[0m:56[0m[0m:068[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+08[0m[0m:47[0m[0m:56[0m[0m:081[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+[Meshtastic] Requesting Position for 1127301168
+08[0m[0m:47[0m[0m:56[0m[0m:124[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Packet 902101905 of type packet timed out
+[object Object]
+08[0m[0m:48[0m[0m:06[0m[0m:625[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+08[0m[0m:48[0m[0m:09[0m[0m:884[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+Sending {
+  message: 'Starenkasten offline. Last heard 824 minutes ago',
+  destination: null,
+  channel: 1,
+  wantAck: false
+}
+08[0m[0m:48[0m[0m:11[0m[0m:066[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 1
+08[0m[0m:48[0m[0m:11[0m[0m:084[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+08[0m[0m:48[0m[0m:11[0m[0m:114[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+[Meshtastic] Requesting Position for 3667344600
+08[0m[0m:48[0m[0m:11[0m[0m:169[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 3667344600
+Sending {
+  message: 'AmmerseeNode1 offline. Last heard 766 minutes ago',
+  destination: null,
+  channel: 1,
+  wantAck: false
+}
+08[0m[0m:48[0m[0m:11[0m[0m:185[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 1
+08[0m[0m:48[0m[0m:11[0m[0m:192[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+08[0m[0m:48[0m[0m:11[0m[0m:201[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+[Meshtastic] Requesting Position for 1127858072
+08[0m[0m:48[0m[0m:11[0m[0m:224[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127858072
+Sending {
+  message: '👽Blush Bridge👽 offline. Last heard 5755 minutes ago',
+  destination: null,
+  channel: 1,
+  wantAck: false
+}
+08[0m[0m:48[0m[0m:11[0m[0m:229[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 1
+08[0m[0m:48[0m[0m:11[0m[0m:232[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+08[0m[0m:48[0m[0m:11[0m[0m:237[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+[Meshtastic] Requesting Position for 1136063148
+08[0m[0m:48[0m[0m:11[0m[0m:275[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1136063148
+Packet 201242072 of type packet timed out
+[object Object]
+08[0m[0m:48[0m[0m:14[0m[0m:428[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+08[0m[0m:48[0m[0m:17[0m[0m:692[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+08[0m[0m:48[0m[0m:20[0m[0m:956[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+08[0m[0m:48[0m[0m:24[0m[0m:220[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+08[0m[0m:48[0m[0m:24[0m[0m:453[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	WriteToRadio ❌ fetch failed
+[meshtastic] Device Status 5
+Packet 979194682 of type packet timed out
+[object Object]
+Packet 58807003 of type packet timed out
+[object Object]
+Packet 924530009 of type packet timed out
+[object Object]
+Packet 372398290 of type packet timed out
+[object Object]
+08[0m[0m:48[0m[0m:59[0m[0m:648[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+[meshtastic] Device Status 4
+[meshtastic] Device Status 5
+Packet 147226913 of type packet timed out
+[object Object]
+Packet 695808870 of type packet timed out
+[object Object]
+Packet 228903245 of type packet timed out
+[object Object]
+Packet 189348675 of type packet timed out
+[object Object]
+Packet 889128592 of type packet timed out
+[object Object]
+Packet 309730751 of type packet timed out
+[object Object]
+Sending {
+  message: 'Espressokannen: Bialetti wird von chinesischem Investor übernommen',
+  destination: undefined,
+  channel: 3,
+  wantAck: false
+}
+09[0m[0m:38[0m[0m:57[0m[0m:541[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 3
+09[0m[0m:38[0m[0m:57[0m[0m:548[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+09[0m[0m:38[0m[0m:57[0m[0m:567[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+Packet 263410089 of type packet timed out
+[object Object]
+Sending {
+  message: 'Nico Mobil offline. Last heard 180 minutes ago',
+  destination: null,
+  channel: 1,
+  wantAck: false
+}
+09[0m[0m:47[0m[0m:56[0m[0m:143[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 1
+09[0m[0m:47[0m[0m:56[0m[0m:150[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+09[0m[0m:47[0m[0m:56[0m[0m:164[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+[Meshtastic] Requesting Position for 1127301168
+09[0m[0m:47[0m[0m:56[0m[0m:198[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Sending {
+  message: 'Starenkasten offline. Last heard 884 minutes ago',
+  destination: null,
+  channel: 1,
+  wantAck: false
+}
+09[0m[0m:48[0m[0m:26[0m[0m:143[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 1
+09[0m[0m:48[0m[0m:26[0m[0m:154[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+09[0m[0m:48[0m[0m:26[0m[0m:175[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+[Meshtastic] Requesting Position for 3667344600
+09[0m[0m:48[0m[0m:26[0m[0m:210[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 3667344600
+Sending {
+  message: 'AmmerseeNode1 offline. Last heard 826 minutes ago',
+  destination: null,
+  channel: 1,
+  wantAck: false
+}
+09[0m[0m:48[0m[0m:26[0m[0m:228[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 1
+09[0m[0m:48[0m[0m:26[0m[0m:234[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+09[0m[0m:48[0m[0m:26[0m[0m:243[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+[Meshtastic] Requesting Position for 1127858072
+09[0m[0m:48[0m[0m:26[0m[0m:274[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127858072
+Sending {
+  message: '👽Blush Bridge👽 offline. Last heard 5815 minutes ago',
+  destination: null,
+  channel: 1,
+  wantAck: false
+}
+09[0m[0m:48[0m[0m:26[0m[0m:282[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 1
+09[0m[0m:48[0m[0m:26[0m[0m:290[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+09[0m[0m:48[0m[0m:26[0m[0m:298[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+[Meshtastic] Requesting Position for 1136063148
+09[0m[0m:48[0m[0m:26[0m[0m:349[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1136063148
+Packet 637406098 of type packet timed out
+[object Object]
+Packet 106638983 of type packet timed out
+[object Object]
+Packet 411282532 of type packet timed out
+[object Object]
+Packet 310362242 of type packet timed out
+[object Object]
+Packet 889158387 of type packet timed out
+[object Object]
+Packet 655298233 of type packet timed out
+[object Object]
+Packet 457339137 of type packet timed out
+[object Object]
+Packet 986419578 of type packet timed out
+[object Object]
+Sending {
+  message: 'Nahost-Liveblog:++ Israel will Armee dauerhaft in Gaza lassen ++',
+  destination: undefined,
+  channel: 3,
+  wantAck: false
+}
+09[0m[0m:51[0m[0m:57[0m[0m:553[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 3
+09[0m[0m:51[0m[0m:57[0m[0m:555[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+09[0m[0m:51[0m[0m:57[0m[0m:574[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+Packet 43990891 of type packet timed out
+[object Object]
+10[0m[0m:46[0m[0m:08[0m[0m:381[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+[meshtastic] Device Status 4
+10[0m[0m:46[0m[0m:09[0m[0m:404[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+10[0m[0m:46[0m[0m:21[0m[0m:824[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+10[0m[0m:46[0m[0m:26[0m[0m:396[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+10[0m[0m:46[0m[0m:30[0m[0m:396[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+10[0m[0m:46[0m[0m:34[0m[0m:396[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+10[0m[0m:46[0m[0m:38[0m[0m:396[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+10[0m[0m:46[0m[0m:41[0m[0m:365[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+[meshtastic] Device Status 5
+Sending {
+  message: 'Nico Mobil offline. Last heard 240 minutes ago',
+  destination: null,
+  channel: 1,
+  wantAck: false
+}
+10[0m[0m:47[0m[0m:56[0m[0m:216[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 1
+10[0m[0m:47[0m[0m:56[0m[0m:224[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+10[0m[0m:47[0m[0m:56[0m[0m:241[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+[Meshtastic] Requesting Position for 1127301168
+10[0m[0m:47[0m[0m:56[0m[0m:277[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Sending {
+  message: 'Starenkasten offline. Last heard 944 minutes ago',
+  destination: null,
+  channel: 1,
+  wantAck: false
+}
+10[0m[0m:48[0m[0m:26[0m[0m:220[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 1
+10[0m[0m:48[0m[0m:26[0m[0m:222[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+10[0m[0m:48[0m[0m:26[0m[0m:247[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+[Meshtastic] Requesting Position for 3667344600
+10[0m[0m:48[0m[0m:26[0m[0m:275[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 3667344600
+Sending {
+  message: 'AmmerseeNode1 offline. Last heard 886 minutes ago',
+  destination: null,
+  channel: 1,
+  wantAck: false
+}
+10[0m[0m:48[0m[0m:26[0m[0m:294[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 1
+10[0m[0m:48[0m[0m:26[0m[0m:302[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+10[0m[0m:48[0m[0m:26[0m[0m:315[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+[Meshtastic] Requesting Position for 1127858072
+10[0m[0m:48[0m[0m:26[0m[0m:353[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127858072
+Sending {
+  message: '👽Blush Bridge👽 offline. Last heard 5875 minutes ago',
+  destination: null,
+  channel: 1,
+  wantAck: false
+}
+10[0m[0m:48[0m[0m:26[0m[0m:361[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 1
+10[0m[0m:48[0m[0m:26[0m[0m:369[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+10[0m[0m:48[0m[0m:26[0m[0m:381[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+[Meshtastic] Requesting Position for 1136063148
+10[0m[0m:48[0m[0m:26[0m[0m:414[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1136063148
+Packet 120551089 of type packet timed out
+[object Object]
+Packet 929705905 of type packet timed out
+[object Object]
+Packet 220339463 of type packet timed out
+[object Object]
+Packet 96112723 of type packet timed out
+[object Object]
+Packet 224715165 of type packet timed out
+[object Object]
+Packet 652556037 of type packet timed out
+[object Object]
+Packet 136518161 of type packet timed out
+[object Object]
+Packet 770254687 of type packet timed out
+[object Object]
+Sending {
+  message: 'USA-Liveblog: ++ Weißes Haus schränkt Zugang für Agenturen ein ++',
+  destination: undefined,
+  channel: 3,
+  wantAck: false
+}
+11[0m[0m:20[0m[0m:57[0m[0m:665[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 3
+11[0m[0m:20[0m[0m:57[0m[0m:671[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+11[0m[0m:20[0m[0m:57[0m[0m:678[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+Packet 315731757 of type packet timed out
+[object Object]
+Sending {
+  message: 'Nico Mobil offline. Last heard 300 minutes ago',
+  destination: null,
+  channel: 1,
+  wantAck: false
+}
+11[0m[0m:47[0m[0m:56[0m[0m:313[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 1
+11[0m[0m:47[0m[0m:56[0m[0m:320[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+11[0m[0m:47[0m[0m:56[0m[0m:338[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+[Meshtastic] Requesting Position for 1127301168
+11[0m[0m:47[0m[0m:56[0m[0m:373[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127301168
+Sending {
+  message: 'Starenkasten offline. Last heard 1004 minutes ago',
+  destination: null,
+  channel: 1,
+  wantAck: false
+}
+11[0m[0m:48[0m[0m:26[0m[0m:311[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 1
+11[0m[0m:48[0m[0m:26[0m[0m:315[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+11[0m[0m:48[0m[0m:26[0m[0m:323[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+[Meshtastic] Requesting Position for 3667344600
+11[0m[0m:48[0m[0m:26[0m[0m:359[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 3667344600
+Sending {
+  message: 'AmmerseeNode1 offline. Last heard 946 minutes ago',
+  destination: null,
+  channel: 1,
+  wantAck: false
+}
+11[0m[0m:48[0m[0m:26[0m[0m:378[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 1
+11[0m[0m:48[0m[0m:26[0m[0m:386[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+11[0m[0m:48[0m[0m:26[0m[0m:395[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+[Meshtastic] Requesting Position for 1127858072
+11[0m[0m:48[0m[0m:26[0m[0m:414[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1127858072
+Sending {
+  message: '👽Blush Bridge👽 offline. Last heard 5935 minutes ago',
+  destination: null,
+  channel: 1,
+  wantAck: false
+}
+11[0m[0m:48[0m[0m:26[0m[0m:422[0m[0m	[32m[1mDEBUG[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendText 📤 Sending message to broadcast on channel 1
+11[0m[0m:48[0m[0m:26[0m[0m:433[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending TEXT_MESSAGE_APP to broadcast
+11[0m[0m:48[0m[0m:26[0m[0m:441[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	HandleMeshPacket 📦 Received TEXT_MESSAGE_APP packet
+[Meshtastic] Requesting Position for 1136063148
+11[0m[0m:48[0m[0m:26[0m[0m:473[0m[0m	[97m[1mTRACE[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	SendPacket 📤 Sending POSITION_APP to 1136063148
+Packet 337647439 of type packet timed out
+[object Object]
+Packet 640094973 of type packet timed out
+[object Object]
+Packet 734865721 of type packet timed out
+[object Object]
+Packet 594096287 of type packet timed out
+[object Object]
+Packet 675626942 of type packet timed out
+[object Object]
+Packet 366684419 of type packet timed out
+[object Object]
+Packet 903738345 of type packet timed out
+[object Object]
+Packet 856774722 of type packet timed out
+[object Object]

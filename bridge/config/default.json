@@ -1,0 +1,13 @@
+{
+    "api": {
+    "url":"127.0.0.1",
+    "port": 5920
+    },
+    "rss":{
+        "channel":3,
+        "feeds":[
+            {"id":0,"url":"https://www.tagesschau.de/infoservices/alle-meldungen-100~rdf.xml"},
+            {"id":1,"url":"https://t3n.de/tag/rss/rss.xml"}
+        ]
+    }
+  }
