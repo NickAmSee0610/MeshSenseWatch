@@ -2173,3 +2173,15 @@ Packet 903738345 of type packet timed out
 [object Object]
 Packet 856774722 of type packet timed out
 [object Object]
+12[0m[0m:30[0m[0m:27[0m[0m:068[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+[meshtastic] Device Status 4
+12[0m[0m:30[0m[0m:29[0m[0m:116[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+12[0m[0m:30[0m[0m:39[0m[0m:551[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+12[0m[0m:30[0m[0m:44[0m[0m:220[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+12[0m[0m:30[0m[0m:48[0m[0m:220[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+12[0m[0m:30[0m[0m:52[0m[0m:220[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+12[0m[0m:30[0m[0m:56[0m[0m:220[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+12[0m[0m:30[0m[0m:59[0m[0m:355[0m[0m	[31m[1mERROR[22m[39m[0m[0m	[[1m[37miMeshDevice:HttpConnection[39m[22m[0m[0m]	ReadFromRadio ❌ fetch failed
+[meshtastic] Device Status 5
+[WSS] Connection from ::ffff:127.0.0.1:52708
+Unable to parse data | SyntaxError: Unexpected token 'd', "deviceConfig" is not valid JSON

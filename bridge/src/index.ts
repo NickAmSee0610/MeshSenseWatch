@@ -1,12 +1,3 @@
-/*import {connect} from "../../api/src/meshtastic"
-import {nodes,connectionStatus} from "../../api/src/vars"
-
-console.log(nodes.value.length)
-console.log(connectionStatus)
-connect("192.168.178.112")
-nodes.value.forEach((node)=>{
-  console.log(node.num)
-})*/
 import WebSocket from 'ws';
 import { XMLParser } from 'fast-xml-parser';
 import config from 'config';
@@ -15,6 +6,7 @@ import { LocalStorage } from "node-localstorage";
 
 const url=config.get('api.url')
 const port = config.get('api.port');
+const fetchInterval=config.get('fetchInterval');
 const rss_channel =config.get("rss.channel");
 const localStorage = new LocalStorage('runtimeData');
 
@@ -41,9 +33,6 @@ ws.on('message', (data:String,isBinary:boolean) => {
 
     
     try {  
-  //console.log("Event "+data.event)
-  //console.log(message)
-    
 
         const res = await fetch(url);
               const headerDate = res.headers && res.headers.get('date') ? res.headers.get('date') : 'no response date';     
@@ -55,7 +44,6 @@ ws.on('message', (data:String,isBinary:boolean) => {
               if(json.rdfRDF==undefined){
                 
                 items=json.rss.channel.item;
-                console.log(items.length);
               }else{
                 items=json.rdfRDF.item;
               }
@@ -72,7 +60,7 @@ ws.on('message', (data:String,isBinary:boolean) => {
                 //console.log(lastLoadTime.getTime());
                 
                 if(pubDate>lastLoadTime.getTime()){
-                  console.log(message);
+                  console.log("New message sent %s",message);
                   axios.post("http://127.0.0.1:"+port+'/send', payload).then(() => {
                   
                   })
@@ -101,6 +89,6 @@ ws.on('message', (data:String,isBinary:boolean) => {
       
     });
     localStorage.setItem("rss_lastLoadTime",Date.now());
-  }, 60000);
+  }, 60000*fetchInterval);
 
   
