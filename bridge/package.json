@@ -19,6 +19,7 @@
     "fast-xml-parser": "^5.2.0",
     "fs": "^0.0.1-security",
     "node-localstorage": "^3.0.5",
+    "rss-parser": "^3.13.0",
     "ws": "^8.18.1",
     "xml2js": "^0.6.2"
   }
